@@ -1,0 +1,6 @@
+# Cloudflare Pages config. Vite builds the TypeScript site into dist/.
+# Deploy with `npx wrangler pages deploy`, or connect the repo in the dashboard
+# (Build command: npm run build · Build output directory: dist).
+name = "bio-page"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-11-01"

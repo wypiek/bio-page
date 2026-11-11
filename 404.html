@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 · m5rcel</title>
+    <meta name="robots" content="noindex" />
+    <!-- bio:head -->
+    <script type="module" src="/src/not-found.ts"></script>
+    <style>
+      .lost { min-height: 100dvh; display: grid; place-items: center; padding: 24px; text-align: center; }
+      .lost .wrap { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+      .lost .loader { width: 120px; height: 120px; }
+      .lost .loader svg { width: 96px; height: 96px; }
+    </style>
+  </head>
+  <body>
+    <main class="lost">
+      <div class="wrap">
+        <div class="loader" role="img" aria-label="Still baking"><svg class="shape" viewBox="0 0 100 100" data-loader><path /></svg></div>
+        <h1 class="display" style="color: var(--primary)">404</h1>
+        <p class="title-l">This loaf never made it out of the oven.</p>
+        <p class="muted">The page you're looking for doesn't exist (or it's an experimental batch).</p>
+        <a class="btn size-m filled ripple" href="/"><span class="ms">arrow_back</span> Back to the bakery</a>
+      </div>
+    </main>
+  </body>
+</html>

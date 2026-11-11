@@ -1,0 +1,22 @@
+import "./styles.css";
+import { initMenus, initRipple, initSnackbar } from "./runtime/components.ts";
+import { initAvatar, initLoaders, initShapes } from "./runtime/morphs.ts";
+import { installSpringTokens } from "./runtime/motion.ts";
+import { initClock, initLetters, initProjectFilters, initReveal, initToolbar, refreshGitHubStats } from "./runtime/sections.ts";
+import { initTheme } from "./runtime/theme.ts";
+
+installSpringTokens();
+initTheme();
+initShapes();
+initAvatar();
+initLoaders();
+initLetters();
+initRipple();
+initMenus();
+initSnackbar();
+initProjectFilters();
+initToolbar();
+initReveal();
+initClock();
+const githubUser = document.querySelector<HTMLElement>("[data-github-user]")?.dataset.githubUser;
+if (githubUser) void refreshGitHubStats(githubUser);
